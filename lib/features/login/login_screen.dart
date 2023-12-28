@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:doc_app/core/helpers/spacing.dart';
 import 'package:doc_app/core/themeing/styles.dart';
 import 'package:doc_app/features/login/widgets/already_have_an_account.dart';
@@ -90,5 +91,22 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     ));
+=======
+import 'package:flutter/material.dart';
+
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Login Screen"),
+      ),
+      body: const Center(
+        child: Text("Login Screen"),
+      ),
+    );
+>>>>>>> origin/main
   }
 }
