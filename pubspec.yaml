@@ -26,6 +26,8 @@ dependencies:
   #Classes and helper functions that support JSON code generation
   json_annotation: ^4.8.1
   json_serializable: ^6.7.1
+  #A build system for Dart code generation and modular compilation.
+  build_runner: ^2.4.7
   #Networking
   #A powerful HTTP networking package, supports Interceptors, Aborting and canceling a request, Custom adapters, Transformers, etc
   dio: ^5.4.0

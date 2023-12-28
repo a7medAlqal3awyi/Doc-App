@@ -1,4 +1,3 @@
-import 'package:doc_app/core/themeing/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
