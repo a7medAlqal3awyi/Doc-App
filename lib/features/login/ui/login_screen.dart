@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
               verticalSpacing(8),
               Text(
                 "We're excited to have you back, can't wait to see what you've been up to since you last logged in.",
-                style: TextStyles.font13GreyW400.copyWith(fontSize: 14.sp),
+                style: TextStyles.font14GreyW400.copyWith(fontSize: 14.sp),
               ),
               const EmailAndPassword(),
               Align(
@@ -62,11 +62,14 @@ class LoginScreen extends StatelessWidget {
   }
 
   void validateThenDoLogin(BuildContext context) {
-    if (context.read<LoginCubit>().formKey.currentState!.validate()) {
-      context.read<LoginCubit>().emitLoginStates(LoginRequestBody(
-            email: context.read<LoginCubit>().emailController.text,
-            password: context.read<LoginCubit>().passwordController.text,
-          ));
+    if(context.read<LoginCubit>().formKey.currentState!.validate()){
+      context.read<LoginCubit>().emitLoginStates();
     }
+    // if (context.read<LoginCubit>().formKey.currentState!.validate()) {
+    //   context.read<LoginCubit>().emitLoginStates(LoginRequestBody(
+    //         email: context.read<LoginCubit>().emailController.text,
+    //         password: context.read<LoginCubit>().passwordController.text,
+    //       ));
+    // }
   }
 }
